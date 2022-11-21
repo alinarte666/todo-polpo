@@ -9,15 +9,15 @@ export const Home = () => {
 	const changeView = () => setShow(!show)
 	return (
 		<div
-			className={`w-full h-full relative flex flex-col flex-start ${
-				!show ? 'md:justify-center gap-6' : 'md:justify-around gap-6'
-			}  items-center overflow-auto`}>
-			<nav className='w-[90%] justify-end items-center gap-6 mx-auto z-10 hidden md:flex'>
+			className={`w-full h-screen bg-transparent overflow-y-auto overflow-x-hidden landscape:h-auto relative flex flex-col justify-start ${
+				!show ? 'md:justify-around gap-6' : 'md:justify-around gap-6'
+			}  items-center`}>
+			<nav className='w-[90%] justify-end items-center gap-6  mx-auto z-10 hidden md:flex pt-2'>
 				<FiGlobe />
 				<Btn children={!show ? 'Sign up' : 'Login'} action={changeView} />
 				<Btn
 					children='Request Demo'
-					styles='p-1 bg-black text-white rounded-lg'
+					styles='py-1 px-2 text-center font-semibold bg-black text-white rounded-lg transition linear hover:scale-110'
 				/>
 			</nav>
 			{show ? (

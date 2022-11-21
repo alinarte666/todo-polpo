@@ -9,7 +9,7 @@ import { Info } from '../../components/Info'
 export const Login = ({ changeView }) => {
 	return (
 		<Formu
-			styleD='h-auto py-6 mt-8 md:h-3/4 w-[90%] flex justify-center items-center rounded-2xl border bg-white max-w-[450px] relative'
+			styleD='h-auto landscape:h-auto py-6 mt-8 md:h-3/4 w-[90%] flex justify-center items-center rounded-2xl border bg-white max-w-[450px] relative'
 			styleF='w-full h-full md:h-auto] md:w-[90%] bg-transparent flex flex-col justify-center md:justify-evenly items-center gap-4'>
 			<div className='w-full flex flex-col items-center gap-2 z-10'>
 				<h1 className='font-bold text-3xl'>Agent Login</h1>
@@ -27,7 +27,7 @@ export const Login = ({ changeView }) => {
 				</p>
 				<Btn
 					children='Sign in'
-					styles='w-[70%] mx-auto md:w-full col-span-3 font-bold bg-black text-white py-1 rounded-md'
+					styles='w-[70%] mx-auto md:w-full col-span-3 font-bold bg-black text-white py-1 rounded-md transition linear hover:scale-110'
 				/>
 				<span
 					className='relative min-w-[250px] col-span-3 text-center  before:content-[""] before:top-[0.7em] after:left-[11.6em] md:after:left-[75%] before:right-[11.6em] md:before:right-[75%] after:top-[0.7em]  before:absolute before:w-[40px] md:before:w-[80px] before:h-[2px] before:bg-gray-500
